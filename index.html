@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <title>HTMLform</title>
+
+    <style>
+        * {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="container border rounded mt-4 mb-auto fw-bold">
+        <div class="row bg-light border-bottom p-3">
+            <h1 class="fs-2 fw-bolder m-0">Payment form example</h1>
+        </div>
+        <div class="row px-3 py-3 mb-2">
+            <div class="alert alert-danger m-0 px-4 py-3" role="alert">
+                Some fields are missing
+            </div>
+        </div>
+        <div class="row px-1">
+            <div class="col-5">
+                <label for="cardNum" class="form-label">Card #</label>
+                <input type="email" class="form-control" id="cardNum" placeholder="XXXXXXXXXXXXXXXX">
+            </div>
+            <div class="col-3">
+                <label for="cvc" class="form-label">CVC #</label>
+                <input type="email" class="form-control" id="cvc" placeholder="0000">
+            </div>
+            <div class="col-4">
+                <label for="amount" class="form-label">Amount</label>
+                <div class="d-flex flex-row">
+                    <p>$ </p>
+                    <input type="email" class="form-control" id="amount" placeholder="Amount">
+                </div>
+            </div>
+        </div>
+        <div class="row px-1 mt-3">
+            <div class="col-6">
+                <label for="firstName" class="form-label">First Name</label>
+                <input type="email" class="form-control" id="firstName">
+            </div>
+            <div class="col-6">
+                <label for="lastName" class="form-label">Last Name</label>
+                <input type="email" class="form-control" id="lastName">
+            </div>
+        </div>
+        <div class="row px-1 mt-3">
+            <div class="col-6">
+                <label for="city" class="form-label">City</label>
+                <input type="email" class="form-control" id="city">
+            </div>
+            <div class="col-3">
+                <label for="lastName" class="form-label">State</label>
+                <select class="form-select" id="State">
+                    <option selected>Pick a state</option>
+                    <option value="1">State 1</option>
+                    <option value="2">State 2</option>
+                    <option value="3">State 3</option>
+                  </select>
+            </div>
+            <div class="col-3">
+                <label for="postalCode" class="form-label">Postal Code</label>
+                <input type="email" class="form-control" id="postalCode">
+            </div>
+        </div>
+        <div class="row px-1 mt-3 mb-4">
+            <div class="col-6">
+                <p>We accept</p>
+                <div class="d-flex p-2 bg-secondary rounded text-white w-50">
+                    <div class="form-check form-check-inline me-4">
+                        <input class="form-check-input" type="radio" name="method" id="method_1" value="option1">
+                        <label class="form-check-label" for="method_1"><i class="fa fa-cc-mastercard" aria-hidden="true"></i></label>
+                    </div>
+                    <div class="form-check form-check-inline me-4">
+                        <input class="form-check-input" type="radio" name="method" id="method_2" value="option2">
+                        <label class="form-check-label" for="method_2"><i class="fa fa-cc-visa" aria-hidden="true"></i></label>
+                    </div>
+                    <div class="form-check form-check-inline me-4">
+                        <input class="form-check-input" type="radio" name="method" id="method_3" value="option3">
+                        <label class="form-check-label" for="method_3"><i class="fa fa-cc-diners-club" aria-hidden="true"></i></label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="method" id="method_4" value="option2">
+                        <label class="form-check-label" for="method_4"><i class="fa fa-cc-amex" aria-hidden="true"></i></label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="3"></textarea>
+                <p class="fw-normal text-secondary m-0" style="font-size: small;">Add any note here.</p>
+            </div>
+        </div>
+        <div class="row bg-light">
+            <div class="d-flex justify-content-end border-top px-3 py-2">
+                <button type="submit" class="btn btn-secondary me-1">Cancel</button>
+                <button type="submit" class="btn btn-primary">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Font awesome -->
+    <script src="https://use.fontawesome.com/cc146cb306.js"></script>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+</body>
+</html>
